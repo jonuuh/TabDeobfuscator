@@ -6,7 +6,7 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 
 @Mod(
         modid = "examplemod",
-        version = "1.2.0",
+        version = "1.0.0",
         acceptedMinecraftVersions = "[1.8.9]"
 )
 public class ExampleMod
