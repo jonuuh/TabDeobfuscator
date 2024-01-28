@@ -1,4 +1,4 @@
-package net.jonuuh.examplemod;
+package net.example.examplemod;
 
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
