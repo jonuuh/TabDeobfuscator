@@ -12,7 +12,7 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 @Mod(
         modid = "tabdeobfuscator",
-        version = "1.1.0",
+        version = "1.1.1",
         acceptedMinecraftVersions = "[1.8.9]"
 )
 public class TabDeobfuscator
@@ -36,7 +36,6 @@ public class TabDeobfuscator
             if (event.type == RenderGameOverlayEvent.ElementType.PLAYER_LIST && Util.isAnyNameObfuscated(mc))
             {
                 event.setCanceled(true);
-
                 Scoreboard sb = mc.theWorld.getScoreboard();
                 tabGui.renderPlayerlist(new ScaledResolution(mc).getScaledWidth(), sb, sb.getObjectiveInDisplaySlot(0));
             }

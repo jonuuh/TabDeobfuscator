@@ -17,10 +17,7 @@ public class GuiPlayerTabOverride extends GuiPlayerTabOverlay
     {
         String displayName = super.getPlayerName(playerInfo);
 
-        if (displayName.contains("\u00a7" + "k"))
-        {
-            displayName = displayName.replace(displayName.substring(displayName.indexOf("\u00a7" + "k"), displayName.indexOf(playerInfo.getGameProfile().getName())), "");
-        }
-        return displayName;
+        return !displayName.contains("\u00a7k") ? displayName : displayName.replace(displayName.substring(
+                displayName.indexOf("\u00a7k"), displayName.indexOf(playerInfo.getGameProfile().getName())), "");
     }
 }
