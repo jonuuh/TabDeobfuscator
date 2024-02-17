@@ -1,13 +1,13 @@
 [
     {
-        "modid": "examplemod",
-        "name": "Example Mod",
-        "description": "An example mod.",
+        "modid": "tabdeobfuscator",
+        "name": "Tab Deobfuscator",
+        "description": "Removes client-side obfuscation formatting (code: §k) from names in player tab gui",
         "version": "${version}",
         "mcversion": "${mcversion}",
         "url": "",
         "updateUrl": "",
-        "authorList": ["The author"],
+        "authorList": ["jonuuh"],
         "credits": "",
         "logoFile": "",
         "screenshots": [],
