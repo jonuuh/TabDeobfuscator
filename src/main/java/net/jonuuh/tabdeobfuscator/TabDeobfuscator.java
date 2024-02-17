@@ -12,7 +12,7 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 @Mod(
         modid = "tabdeobfuscator",
-        version = "1.0.0",
+        version = "1.1.0",
         acceptedMinecraftVersions = "[1.8.9]"
 )
 public class TabDeobfuscator
@@ -33,7 +33,7 @@ public class TabDeobfuscator
         @SubscribeEvent
         public void onPreRenderTabGui(RenderGameOverlayEvent.Pre event)
         {
-            if (event.type == RenderGameOverlayEvent.ElementType.PLAYER_LIST)
+            if (event.type == RenderGameOverlayEvent.ElementType.PLAYER_LIST && Util.isAnyNameObfuscated(mc))
             {
                 event.setCanceled(true);
 
@@ -42,5 +42,4 @@ public class TabDeobfuscator
             }
         }
     }
-
 }
