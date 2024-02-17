@@ -2,7 +2,7 @@
     {
         "modid": "tabdeobfuscator",
         "name": "Tab Deobfuscator",
-        "description": "Removes client-side obfuscation formatting (code: §k) from names in player tab gui",
+        "description": "Removes client-side obfuscation formatting from names in player tab gui",
         "version": "${version}",
         "mcversion": "${mcversion}",
         "url": "",
